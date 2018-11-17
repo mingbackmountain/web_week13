@@ -18,7 +18,7 @@
             <tbody>
           <?php 
             $sum = 0;
-            $connect = mysqli_connect('localhost','root','','mydb');
+            $connect = mysqli_connect('localhost','root','','student');
             $sql = "SELECT *, YEAR(CURDATE()) - YEAR(Birthdate) as Age FROM personal_info;";
             $result = $connect->query($sql);
          if ($result->num_rows > 0) {
